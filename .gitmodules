@@ -1,0 +1,3 @@
+[submodule "web-moderno"]
+	path = web-moderno
+	url = git@github.com:cod3rcursos/web-moderno.git
