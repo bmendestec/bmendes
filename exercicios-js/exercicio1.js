@@ -28,3 +28,68 @@ function criarProduto(nome, preco){
 
 console.log(criarProduto('Algodão', 15.40))
 console.log(criarProduto('iPad', 1199.49))
+
+
+/**Function to calc the salary's employee */
+
+const salaryCounter = (qtHour, salaryPerHour) => salaryPerHour * qtHour
+console.log(salaryCounter(150,40.5))
+
+/**Function to return the month according to the parameter */
+
+const dayOfMonth = function (number){ 
+    const date = new Date;
+
+    date.setMonth(number - 1)
+
+    return date.toLocaleString('en-US', {month: 'long'})
+}
+
+for (i = 1; i <= 12; i++){
+    console.log(`${i} - ${dayOfMonth(i)}`)
+}
+console.log(dayOfMonth(1))
+console.log(dayOfMonth(2))
+console.log(dayOfMonth(3))
+console.log(dayOfMonth(4))
+
+
+/**Function to return which number is higher than the other */
+const whichIsHiger = function (num1, num2) {
+    if (typeof num1 != typeof num2) return false
+    return num1 >= num2
+}
+
+console.log(whichIsHiger(0,0))
+console.log(whichIsHiger(0,"0"))
+console.log(whichIsHiger(5,1))
+
+/**Function to return the type of data */
+
+const invertTheData = function(parameter){
+    let dataReturn
+    if (typeof parameter === 'number'){
+        if(parameter > 0){
+            dataReturn = parameter
+        }else{
+            dataReturn = -parameter
+        }
+    }else if(typeof parameter === 'boolean'){
+        if(parameter){
+            dataReturn = !parameter
+        }else{
+            dataReturn = parameter
+        }
+    }else{
+        dataReturn = 'Boolean or expected number, but the parameter is a string'
+    }
+
+    return dataReturn
+}
+
+console.log(invertTheData(true))
+console.log(invertTheData("6"))
+console.log(invertTheData(-2000))
+console.log(invertTheData("na programação"))
+let retorno = -2000
+console.log(typeof retorno)
