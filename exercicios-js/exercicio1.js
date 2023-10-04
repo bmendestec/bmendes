@@ -91,5 +91,18 @@ console.log(invertTheData(true))
 console.log(invertTheData("6"))
 console.log(invertTheData(-2000))
 console.log(invertTheData("na programação"))
-let retorno = -2000
-console.log(typeof retorno)
+
+
+/**Execício 01 Exercicios__Javascript.pdf */
+function returnCalc(a, b){
+    let soma = a + b
+    let subtracao = a - b
+    let multiplicacao = a * b
+    let divisao = a / b
+    console.log(`Soma: ${a} + ${b} = ${soma}`)
+    console.log(`Subtração: ${a} - ${b} = ${subtracao}`)
+    console.log(`Multiplicação: ${a} * ${b} = ${multiplicacao}`)
+    console.log(`Divisão: ${a} / ${b} = ${divisao}`)
+}
+
+returnCalc(10,2)
