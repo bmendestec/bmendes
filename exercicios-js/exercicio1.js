@@ -106,3 +106,34 @@ function returnCalc(a, b){
 }
 
 returnCalc(10,2)
+
+// Tamanho de triângulos
+function mmyTriangle(side1 = 0, side2 = 0, side3 = 0){
+    let msg
+
+    if(side1 == side2 && side1 == side3){
+        msg = 'Equilátero'
+    }else if((side1 == side2 && side1 != side3) || (side1 != side2 && side1 == side3)){
+        msg = 'Isósceles'
+    }else{
+        msg = 'Escaleno'
+    }
+
+    return msg
+}
+
+console.log(mmyTriangle(2,2,2))
+console.log(mmyTriangle(2,2,3))
+console.log(mmyTriangle(4,20,3))
+
+//Base e expoente
+function expoNumber(num, exp){
+    let outcome
+    if(num && exp){
+        outcome = Math.pow(num, exp)
+    }
+    
+    return outcome
+}
+
+console.log(expoNumber(1,0))
