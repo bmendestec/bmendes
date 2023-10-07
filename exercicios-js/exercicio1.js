@@ -142,4 +142,18 @@ function expoNumber(num, exp){
 
 console.log(expoNumber(4,8))
 
-//Execício 04 Exercicios__Javascript.pdf
+//Execício 05 Exercicios__Javascript.pdf
+
+function priceReturn(param){
+    let realCurrency
+    realCurrency = new Intl.NumberFormat('pt-BR',{
+        style: 'currency',
+        currency: 'BRL',
+    })
+    return realCurrency.format(param)
+}
+const param = 0.1 + 0.2
+console.log(priceReturn(param))
+
+//Execício 06 Exercicios__Javascript.pdf
+
