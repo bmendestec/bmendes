@@ -93,7 +93,7 @@ console.log(invertTheData(-2000))
 console.log(invertTheData("na programação"))
 
 
-/**Execício 01 Exercicios__Javascript.pdf */
+//Execício 01 Exercicios__Javascript.pdf
 function returnCalc(a, b){
     let soma = a + b
     let subtracao = a - b
@@ -107,7 +107,7 @@ function returnCalc(a, b){
 
 returnCalc(10,2)
 
-// Tamanho de triângulos
+//Execício 02 Exercicios__Javascript.pdf
 function mmyTriangle(side1 = 0, side2 = 0, side3 = 0){
     let msg
 
@@ -126,14 +126,20 @@ console.log(mmyTriangle(2,2,2))
 console.log(mmyTriangle(2,2,3))
 console.log(mmyTriangle(4,20,3))
 
-//Base e expoente
+//Execício 03 Exercicios__Javascript.pdf
 function expoNumber(num, exp){
     let outcome
-    if(num && exp){
-        outcome = Math.pow(num, exp)
-    }
+    if(num == 0 || exp == 0){
+        return 'There is no way to calculate it bro!'
+    }else{
+        if(num && exp){
+            outcome = Math.pow(num, exp)
+        }
+    }   
     
     return outcome
 }
 
-console.log(expoNumber(1,0))
+console.log(expoNumber(4,8))
+
+//Execício 04 Exercicios__Javascript.pdf
